@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DAMN-examen1</string>
+    <string name="binary_image_desc">Ilustración del sistema binario con ceros y unos</string>
+    <string name="learn_title">Aprendamos el Sistema Binario</string>
+    <string name="practice_button">¡Vamos a practicar!</string>
 </resources>
