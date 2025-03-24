@@ -25,7 +25,7 @@
                 android:text="Aprendamos el Sistema Binario"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:gravity="center"
+                android:gravity="start"
                 android:layout_marginBottom="16dp" />
 
             <TextView

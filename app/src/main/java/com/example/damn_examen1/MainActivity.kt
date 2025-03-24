@@ -1,5 +1,6 @@
 package com.example.damn_examen1
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         if (navController != null) {
             binding.bottomNavigation.setupWithNavController(navController) // Cambiado a bottomNavigation
+        }
+
+        binding.btnSettings.setOnClickListener {
+            startActivity(Intent(this, ThemeActivity::class.java))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 }
