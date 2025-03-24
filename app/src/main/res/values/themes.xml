@@ -1,9 +1,25 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.DAMNexamen1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!--// app/src/main/res/values/themes.xml-->
+    <!-- Base IPN (Guinda/White) theme for light mode -->
+    <style name="Base.Theme.IPNTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ipn_primary</item>
+        <item name="colorPrimaryVariant">@color/ipn_primary_variant</item>
+        <item name="colorSecondary">@color/ipn_secondary</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/text_on_light</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
-    <style name="Theme.DAMNexamen1" parent="Base.Theme.DAMNexamen1" />
+    <!-- Base ESCOM (Blue/Black) theme for light mode -->
+    <style name="Base.Theme.ESCOMTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/escom_primary</item>
+        <item name="colorPrimaryVariant">@color/escom_primary_variant</item>
+        <item name="colorSecondary">@color/escom_secondary</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/text_on_light</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Default theme (will use IPN initially) -->
+    <style name="Theme.DAMNexamen1" parent="Base.Theme.IPNTheme" />
 </resources>

@@ -1,7 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.DAMNexamen1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <!-- Base IPN (Guinda/White) theme for dark mode -->
+    <style name="Base.Theme.IPNTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ipn_primary</item>
+        <item name="colorPrimaryVariant">@color/ipn_primary_variant</item>
+        <item name="colorSecondary">@color/ipn_secondary</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <!-- Base ESCOM (Blue/Black) theme for dark mode -->
+    <style name="Base.Theme.ESCOMTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/escom_primary</item>
+        <item name="colorPrimaryVariant">@color/escom_primary_variant</item>
+        <item name="colorSecondary">@color/escom_secondary</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:windowBackground">@color/black</item>
     </style>
 </resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--// app/src/main/res/layout/fragment_learn.xml-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearnFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aprendamos el Sistema Binario"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El sistema binario es una forma de contar usando solo dos números: 0 y 1."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/binary_image"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/binary_example"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cómo funciona?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cada posición tiene un valor que es una potencia de 2:\n\n1 = 2^0\n2 = 2^1\n4 = 2^2\n8 = 2^3\n16 = 2^4\n...\n\nPor ejemplo, el número decimal 13 en binario sería 1101, porque:\n1×8 + 1×4 + 0×2 + 1×1 = 13"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/go_to_quiz_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Vamos a practicar!"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

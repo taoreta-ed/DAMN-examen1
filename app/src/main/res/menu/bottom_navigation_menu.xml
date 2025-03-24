@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--// app/src/main/res/menu/bottom_navigation_menu.xml-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/learnFragment"
+        android:icon="@drawable/ic_learn"
+        android:title="Aprender" />
+    <item
+        android:id="@+id/gameFragment"
+        android:icon="@drawable/ic_game"
+        android:title="Jugar" />
+</menu>
