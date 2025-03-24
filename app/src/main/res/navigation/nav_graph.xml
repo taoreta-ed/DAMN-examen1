@@ -1,38 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/learnFragment">
 
-    <!-- Fragments -->
+    <!-- LearnFragment -->
     <fragment
         android:id="@+id/learnFragment"
         android:name="com.example.damn_examen1.LearnFragment"
         android:label="Aprender Binario"
-        tools:layout="@layout/fragment_learn" />
+        tools:layout="@layout/fragment_learn">
 
+        <action
+            android:id="@+id/action_learnFragment_to_quizActivity"
+            app:destination="@id/quizActivity" />
+
+        <action
+            android:id="@+id/action_learnFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+    <!-- GameFragment -->
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.example.damn_examen1.GameFragment"
         android:label="Juego Binario"
         tools:layout="@layout/fragment_game">
 
-        <!-- Acción para ir a QuizActivity -->
         <action
             android:id="@+id/action_gameFragment_to_quizActivity"
             app:destination="@id/quizActivity" />
-
-        <action
-            android:id="@+id/action_learnFragment_to_quizActivity"
-            app:destination="@id/quizActivity" />
     </fragment>
 
-    <!-- Activity (debe estar definida como destino) -->
+    <!-- QuizActivity -->
     <activity
         android:id="@+id/quizActivity"
         android:name="com.example.damn_examen1.QuizActivity"
         android:label="Quiz Binario" />
-
-
 </navigation>
