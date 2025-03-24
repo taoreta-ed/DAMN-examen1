@@ -1,21 +1,12 @@
+<!-- app/src/main/res/values-night/themes.xml -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base IPN (Guinda/White) theme for dark mode -->
+    <!-- Tema noche (ESCOM - Azul/Blanco) -->
     <style name="Base.Theme.IPNTheme" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/ipn_primary</item>
-        <item name="colorPrimaryVariant">@color/ipn_primary_variant</item>
-        <item name="colorSecondary">@color/ipn_secondary</item>
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <item name="android:textColor">@color/text_on_dark</item>
-        <item name="android:windowBackground">@color/black</item>
-    </style>
-
-    <!-- Base ESCOM (Blue/Black) theme for dark mode -->
-    <style name="Base.Theme.ESCOMTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/escom_primary</item>
         <item name="colorPrimaryVariant">@color/escom_primary_variant</item>
-        <item name="colorSecondary">@color/escom_secondary</item>
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <item name="android:textColor">@color/text_on_dark</item>
-        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/escom_primary_variant</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:textColor">@color/text_light</item>
     </style>
 </resources>

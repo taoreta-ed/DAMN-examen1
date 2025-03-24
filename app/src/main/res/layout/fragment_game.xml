@@ -252,6 +252,7 @@
 
     <Button
         android:id="@+id/go_to_quiz_button"
+        style="@style/Widget.Material3.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¡Prueba tus conocimientos!"

@@ -12,18 +12,41 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Aplicar tema antes de cualquier vista
+        applySelectedTheme()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configuración de navegación (usa binding.bottom_navigation)
+        setupNavigation()
+        setupSettingsButton()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (ThemeActivity.themeChanged) {
+            ThemeActivity.themeChanged = false
+            recreate()
+        }
+    }
+
+    private fun applySelectedTheme() {
+        when (ThemeActivity.selectedTheme) {
+            "IPN" -> setTheme(R.style.Base_Theme_IPNTheme)
+            "ESCOM" -> setTheme(R.style.Base_Theme_ESCOMTheme)
+        }
+    }
+
+    private fun setupNavigation() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
         val navController = navHostFragment?.findNavController()
 
         if (navController != null) {
-            binding.bottomNavigation.setupWithNavController(navController) // Cambiado a bottomNavigation
+            binding.bottomNavigation.setupWithNavController(navController)
         }
+    }
 
+    private fun setupSettingsButton() {
         binding.btnSettings.setOnClickListener {
             startActivity(Intent(this, ThemeActivity::class.java))
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)

@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--//app/src/main/res/values/colors.xml-->
+<!-- app/src/main/res/values/colors.xml -->
 <resources>
-    <!-- Base colors -->
-    <color name="black">#FF000000</color>
+    <!-- Colores base -->
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
 
-    <!-- IPN Theme Colors -->
+    <!-- Tema IPN (Guinda) -->
     <color name="ipn_primary">#A61C3C</color>
     <color name="ipn_primary_variant">#7A1429</color>
-    <color name="ipn_secondary">#D9C0C6</color>
 
-    <!-- ESCOM Theme Colors -->
+    <!-- Tema ESCOM (Azul) -->
     <color name="escom_primary">#005DAA</color>
     <color name="escom_primary_variant">#003D71</color>
-    <color name="escom_secondary">#B3CFEA</color>
 
-    <!-- Text colors -->
-    <color name="text_on_light">#212121</color>
-    <color name="text_on_dark">#F5F5F5</color>
+    <!-- Textos -->
+    <color name="text_light">#212121</color> <!-- Para fondos claros -->
 </resources>

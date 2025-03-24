@@ -1,0 +1,13 @@
+<!-- app/src/main/res/values-night/colors.xml -->
+<resources>
+    <!-- Mismo azul que en modo claro -->
+    <color name="escom_primary">#005DAA</color>
+    <color name="escom_primary_variant">#003D71</color>
+
+    <!-- Fondo blanco también en noche -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Textos -->
+    <color name="text_light">#212121</color>
+</resources>
